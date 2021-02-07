@@ -1,0 +1,36 @@
+
+{% extends 'base.html' %}
+{% load static %}
+<title>{% block title %}home{% endblock %}</title>
+{% block content %}
+
+<style>
+.carousel-caption {
+    bottom: 200px;
+}
+
+.carousel-caption>h4 {
+
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 80px;
+    /* font-weight: 600; */
+}
+
+</style>
+
+<header>
+
+</header>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/marvin-meyer-SYTO3xs06fU-unsplash.jpg' %}" class="d-block w-100" alt="..."
+      width="1200" height="600">
+      <div class="carousel-caption d-none d-md-block">
+        <h4>Django User Registration</h4>
+
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
